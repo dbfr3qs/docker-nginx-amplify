@@ -45,7 +45,7 @@ COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
 # variables, and updates /etc/amplify-agent/agent.conf accordingly.
 
 COPY ./entrypoint.sh /entrypoint.sh
-
+COPY ./nginx.conf /etc/nginx/nginx.conf
 # TO set/override API_KEY and AMPLIFY_IMAGENAME when starting an instance:
 # docker run --name my-nginx1 -e API_KEY='..effc' -e AMPLIFY_IMAGENAME="service-name" -d nginx-amplify
 
